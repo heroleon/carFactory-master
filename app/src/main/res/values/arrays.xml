@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="maintenance_title">
+        <item>基本信息</item>
+        <item>维修记录</item>
+        <item>确认信息</item>
+    </string-array>
+
+    <string-array name="tab_repair">
+        <item>未交车</item>
+        <item>已交车</item>
+    </string-array>
+</resources>

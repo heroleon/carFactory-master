@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCommonBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_repair_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repair_order_id"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_repair_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            tools:ignore="RelativeOverlap"
+            tools:text="待维修" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorCommonBg"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repair_car"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/small_stroke_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_car_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_card_content"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_car_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_card_type"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_car_engine_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/car_card_engine_num"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_car_card"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_car_frame_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/car_card_frame_num"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_car_engine_num"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_car_mileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/car_repair_mileage"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_car_frame_num"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_car_duty_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_duty_person_content"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_car_mileage"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_car_mileage" />
+
+                <TextView
+                    android:id="@+id/tv_driver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/car_driver_name_content"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_car_mileage"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_driver_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/car_driver_phone_content"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_driver_name"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_driver_name" />
+
+                <TextView
+                    android:id="@+id/tv_accept_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/car_accept_time"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_driver_name"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/car_delivery_time"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_accept_time"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_accept_time" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/repair_content"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_repair_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/small_stroke_gray"
+                android:padding="10dp"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp"
+                tools:text="@string/repair_content" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_part_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/repair_part"
+                    android:textColor="@color/colorTxtColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_part_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_red"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_part_title"
+                    app:layout_constraintLeft_toRightOf="@id/tv_part_title"
+                    app:layout_constraintTop_toTopOf="@id/tv_part_title"
+                    tools:ignore="MissingConstraints"
+                    tools:text="@string/part_price_brackets" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rl_part_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/small_stroke_gray"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_part_title"
+                    tools:ignore="MissingConstraints" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_accessory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_accessory_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/repair_accessory"
+                    android:textColor="@color/colorTxtColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_accessory_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_red"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_accessory_title"
+                    app:layout_constraintLeft_toRightOf="@id/tv_accessory_title"
+                    app:layout_constraintTop_toTopOf="@id/tv_accessory_title"
+                    tools:ignore="MissingConstraints"
+                    tools:text="@string/part_price_brackets" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rl_accessory_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/small_stroke_gray"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_accessory_title"
+                    tools:ignore="MissingConstraints" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/small_stroke_gray"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/total_fee"
+                    android:textColor="@color/colorTxtColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_total_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_red"
+                    android:textSize="18sp"
+                    tools:text="@string/part_price" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_option"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/btn_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_option_shape"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_delivery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_option_solid_shape"
+            android:gravity="center"
+            android:text="@string/delivery_car"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_repair"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_option_solid_shape"
+            android:gravity="center"
+            android:text="@string/btn_repair"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

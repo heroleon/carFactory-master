@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/tv_car_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorTxtColor"
+        android:textSize="18sp"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpaceLine" />
+
+    <TextView
+        android:id="@+id/tv_car_owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:text="@string/car_owner_name"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="14sp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_car_owner_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:text="@string/car_owner_phone"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="14sp"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/repair_con"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_driver_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:paddingRight="15dp"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry"
+            android:paddingEnd="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

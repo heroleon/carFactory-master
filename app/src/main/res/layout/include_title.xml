@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/include_title"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/colorAccent"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/toolbar_back"
+        tools:ignore="ContentDescription,MissingConstraints,RtlSymmetry"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="标题" />
+</androidx.constraintlayout.widget.ConstraintLayout>

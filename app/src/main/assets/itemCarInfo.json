@@ -1,0 +1,82 @@
+[
+  {
+    "sort": "0",
+    "title": "车牌号",
+    "must": "true",
+    "inputType": "1",
+    "maxLength": "10",
+    "hint": "请输入"
+  },
+  {
+    "sort": "1",
+    "title": "车型",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "10",
+    "hint": "请输入"
+  },
+  {
+    "sort": "2",
+    "title": "车架号",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "17",
+    "hint": "请输入"
+  },
+  {
+    "sort": "3",
+    "title": "发动机号",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "8",
+    "hint": "请输入"
+  },
+  {
+    "sort": "4",
+    "title": "车主姓名",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "20",
+    "hint": "请输入"
+  },
+  {
+    "sort": "5",
+    "title": "车主地址",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "30",
+    "hint": "请输入"
+  },
+  {
+    "sort": "6",
+    "title": "车主电话",
+    "must": "false",
+    "inputType": "2",
+    "maxLength": "11",
+    "hint": "请输入"
+  },
+  {
+    "sort": "7",
+    "title": "单位名称",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "20",
+    "hint": "请输入"
+  },
+  {
+    "sort": "8",
+    "title": "单位地址",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "20",
+    "hint": "请输入"
+  },
+  {
+    "sort": "9",
+    "title": "单位电话",
+    "must": "false",
+    "inputType": "2",
+    "maxLength": "11",
+    "hint": "请输入"
+  }
+]

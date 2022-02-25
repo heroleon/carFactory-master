@@ -1,0 +1,42 @@
+[
+  {
+    "sort": "0",
+    "title": "姓\u3000\u3000名",
+    "must": "true",
+    "inputType": "1",
+    "maxLength": "10",
+    "hint": "请输入"
+  },
+  {
+    "sort": "1",
+    "title": "手机号码",
+    "must": "true",
+    "inputType": "2",
+    "maxLength": "11",
+    "hint": "请输入"
+  },
+  {
+    "sort": "2",
+    "title": "家庭号码",
+    "must": "false",
+    "inputType": "2",
+    "maxLength": "11",
+    "hint": "请输入"
+  },
+  {
+    "sort": "3",
+    "title": "职位",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "20",
+    "hint": "请输入"
+  },
+  {
+    "sort": "4",
+    "title": "备注",
+    "must": "false",
+    "inputType": "1",
+    "maxLength": "20",
+    "hint": "请输入"
+  }
+]

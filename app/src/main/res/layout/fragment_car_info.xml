@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCommonBg"
+        android:divider="@drawable/shape_space_line"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/car_info"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ll_car_id"
+            layout="@layout/include_content_edit" />
+
+        <include
+            android:id="@+id/ll_car_model"
+            layout="@layout/include_content_edit" />
+
+        <include
+            android:id="@+id/ll_chassis_num"
+            layout="@layout/include_content_edit" />
+
+        <include
+            android:id="@+id/ll_engine_num"
+            layout="@layout/include_content_edit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/car_owner_info"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ll_driver_name"
+            layout="@layout/include_content_edit" />
+
+        <include
+            android:id="@+id/ll_driver_address"
+            layout="@layout/include_content_edit" />
+
+        <include
+            android:id="@+id/ll_driver_phone"
+            layout="@layout/include_content_edit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/department_info"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ll_department_name"
+            layout="@layout/include_content_edit" />
+
+        <include
+            android:id="@+id/ll_department_address"
+            layout="@layout/include_content_edit" />
+
+        <include
+            android:id="@+id/ll_department_phone"
+            layout="@layout/include_content_edit" />
+    </LinearLayout>
+</ScrollView>

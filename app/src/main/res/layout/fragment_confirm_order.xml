@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCommonBg"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repair_car"
+            android:textColor="@color/colorTxtColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/small_stroke_gray"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_car_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car_card_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/car_driver_name_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_driver_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/car_driver_phone_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_repair_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/car_repair_mileage"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_car_duty_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/car_duty_person_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_repair_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/repair_content"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_repair_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/small_stroke_gray"
+                android:padding="10dp"
+                android:text="@string/repair_content"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_part_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repair_part"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_part_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_red"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_part_title"
+                app:layout_constraintLeft_toRightOf="@id/tv_part_title"
+                app:layout_constraintTop_toTopOf="@id/tv_part_title"
+                tools:ignore="MissingConstraints"
+                tools:text="@string/part_price_brackets" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_part_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/small_stroke_gray"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_part_title"
+                tools:ignore="MissingConstraints" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_accessory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_accessory_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repair_accessory"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_accessory_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_red"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_accessory_title"
+                app:layout_constraintLeft_toRightOf="@id/tv_accessory_title"
+                app:layout_constraintTop_toTopOf="@id/tv_accessory_title"
+                tools:ignore="MissingConstraints"
+                tools:text="@string/part_price_brackets" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_accessory_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/small_stroke_gray"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_accessory_title"
+                tools:ignore="MissingConstraints" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/small_stroke_gray"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_repair_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/car_repair_time_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_time_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/car_repair_fee_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/small_stroke_gray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/total_fee"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/light_red"
+                android:textSize="18sp"
+                tools:text="@string/part_price" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

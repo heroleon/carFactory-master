@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <com.leon.carfixfactory.ui.custom.NoScrollViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="UnknownIdInLayout" />
+
+    <LinearLayout
+        android:id="@+id/ll_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_last_step"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_confirm_shape"
+            android:gravity="center"
+            android:text="@string/last_step"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv_next_step"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_confirm_shape"
+            android:gravity="center"
+            android:text="@string/next_step"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

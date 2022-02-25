@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_add_car_part"
+        android:textColor="@color/colorTxtColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/car_part_name"
+            android:textColor="@color/colorTxtColor"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_part_name"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_gray_shape"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorTextBlack"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/car_part_price"
+            android:textColor="@color/colorTxtColor"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_part_price"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_gray_shape"
+            android:gravity="right|center_vertical"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorTextBlack"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_third_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/car_part_count"
+            android:textColor="@color/colorTxtColor"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_part_count"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_gray_shape"
+            android:gravity="right|center_vertical"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorTextBlack"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+
+</LinearLayout>

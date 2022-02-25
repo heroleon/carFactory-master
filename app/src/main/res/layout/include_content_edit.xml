@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorWhite"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_left_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorTxtColor"
+        android:textSize="14sp"
+        tools:text="左标题" />
+
+    <ImageView
+        android:id="@+id/iv_necessary_star"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:src="@mipmap/icon_must" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/colorTextBlack"
+        android:textColorHint="@color/colorTextBlack"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:background="@null"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+</LinearLayout>

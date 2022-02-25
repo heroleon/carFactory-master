@@ -1,0 +1,117 @@
+<resources>
+    <!--扩散圆颜色-->
+    <attr name="diffuse_color" format="color" />
+    <!--中心圆颜色-->
+    <attr name="diffuse_coreColor" format="color" />
+    <!--中心圆半径-->
+    <attr name="diffuse_coreRadius" format="float" />
+
+    <!--扩散圆宽度,值越小越宽-->
+    <attr name="diffuse_width" format="integer" />
+    <!--最大扩散宽度-->
+    <attr name="diffuse_maxWidth" format="integer" />
+    <!--扩散速度，值越大越快-->
+    <attr name="diffuse_speed" format="integer" />
+
+    <declare-styleable name="DiffuseView">
+        <attr name="diffuse_color" />
+        <attr name="diffuse_coreColor" />
+        <attr name="diffuse_coreRadius" />
+        <attr name="diffuse_width" />
+        <attr name="diffuse_maxWidth" />
+        <attr name="diffuse_speed" />
+    </declare-styleable>
+
+    <!--是否显示必要* 号-->
+    <attr name="is_must_show" format="boolean" />
+    <!--语音TextView 提示语-->
+    <attr name="textview_tips" format="string" />
+    <!--文字输入框EditText hint提示语-->
+    <attr name="edittext_hint" format="string" />
+
+    <!--文字框最大字数 默认500-->
+    <attr name="edittext_maxsize" format="integer" />
+
+    <declare-styleable name="VoiceView">
+        <attr name="is_must_show" />
+        <attr name="textview_tips" />
+        <attr name="edittext_hint" />
+        <attr name="edittext_maxsize" />
+    </declare-styleable>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Start" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--设置背景颜色-->
+        <item name="android:windowBackground">@drawable/splash</item>
+        <!-- 隐藏标题栏 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Widget.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/colorTextGray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+    <style name="VoiceDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowCloseOnTouchOutside">false</item><!--点击旁边不让消失-->
+        <item name="android:windowAnimationStyle">@style/ActionDialogAnimation</item><!--动画-->
+    </style>
+
+    <style name="ActionDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_anim_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_anim_dialog_out</item>
+    </style>
+
+
+    <style name="dialog_theme" parent="QMUI.Dialog">
+        <item name="qmui_dialog_bg">@drawable/dialog_shape</item>
+        <item name="qmui_dialog_action_container_style">@style/DialogTheme2ActionCloudPanContainer</item>
+        <item name="qmui_dialog_action_style">@style/DialogTheme2ActionCloudPanStyle</item>
+    </style>
+
+    <style name="DialogTheme2ActionCloudPanContainer">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="qmui_dialog_action_container_justify_content">stretch</item>
+        <item name="qmui_dialog_action_height">67dp</item>
+    </style>
+
+    <style name="DialogTheme2ActionCloudPanStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:background">@null</item>
+        <item name="qmui_dialog_positive_action_text_color">@color/dialog_positive</item>
+        <item name="qmui_dialog_negative_action_text_color">@color/colorTextGray</item>
+    </style>
+</resources>

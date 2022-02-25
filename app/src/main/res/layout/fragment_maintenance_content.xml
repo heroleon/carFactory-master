@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCommonBg"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/shape_space_line"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <!--维修内容-->
+        <com.leon.carfixfactory.ui.custom.voice.VoiceView
+            android:id="@+id/vv_maintenance_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:edittext_hint="@string/hint_input_500"
+            app:edittext_maxsize="500"
+            app:is_must_show="false"
+            app:textview_tips="@string/security_edu_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_repair_duty_person"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/repair_person"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_duty_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="4dp"
+                android:maxLines="2"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:rotation="-90"
+                android:src="@mipmap/arrow_down_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/repair_mileage"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_repair_mileage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorTextBlack"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/repair_mileage_unit"
+                android:textColor="@color/colorTextGray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/work_time"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/icon_must" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_repair_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorTextBlack"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/work_time_fee"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/icon_must" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_work_fee"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorTextBlack"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash_unit"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/repair_part"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/icon_must"
+                tools:ignore="ContentDescription" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_add_part"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_home_add" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_repair_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/repair_parts_list"
+                android:textColor="@color/colorTxtColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_add_accessories"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_home_add" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_parts_accessorise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_must"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="*"
+            android:textColor="@color/light_red"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

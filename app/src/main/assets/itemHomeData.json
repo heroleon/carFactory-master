@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "icon_purchase_manage",
+    "title": "进货管理"
+  },
+  {
+    "icon": "icon_fix_manage",
+    "title": "维修管理"
+  },
+  {
+    "icon": "icon_warehouse_manage",
+    "title": "仓库管理"
+  },
+  {
+    "icon": "icon_accounting_manage",
+    "title": "账务管理"
+  },
+  {
+    "icon": "icon_client_manage",
+    "title": "客户关系"
+  },
+  {
+    "icon": "icon_worker_manage",
+    "title": "员工管理"
+  }
+]

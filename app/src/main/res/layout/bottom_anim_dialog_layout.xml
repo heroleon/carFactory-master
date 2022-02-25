@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tv_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/voice_tips"
+        android:textColorHint="@color/colorTextGray"
+        android:textColor="@color/colorTxtColor"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="@string/voice_cancel"
+                android:textColor="#656565"
+                android:visibility="invisible"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/arrow_down_black"
+                android:visibility="visible" />
+
+
+        </FrameLayout>
+
+
+        <com.leon.carfixfactory.ui.custom.voice.DiffuseView
+            android:id="@+id/diffuseView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:diffuse_color="@color/voiceColor"
+            app:diffuse_coreColor="@color/colorPrimaryDark"
+            app:diffuse_coreRadius="100"
+            app:diffuse_maxWidth="300"
+            app:diffuse_speed="5"
+            app:diffuse_width="4" />
+
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="#4993F8"
+            android:visibility="invisible"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
